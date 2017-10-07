@@ -12,7 +12,6 @@ int ydirection = 1;  // Top to Bottom
 
 
   void draw(){
-    
     xpos = xpos + ( xspeed * xdirection );
     ypos = ypos + ( yspeed * ydirection );
     //Draws circle

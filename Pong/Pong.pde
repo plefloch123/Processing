@@ -30,7 +30,13 @@ void draw () {
   game.moveUpPlayer1();  
   
   }else if (key == 's') {
-
+    game.moveDownPlayer1();
+  }
+  //Incase caps lock is on it still works
+  else if (key == 'W' ){
+  game.moveUpPlayer1();  
+  
+  }else if (key == 'S') {
     game.moveDownPlayer1();
   }
 
