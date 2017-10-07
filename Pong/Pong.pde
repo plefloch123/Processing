@@ -17,17 +17,13 @@ void draw () {
 
 void keyPressed()
 {
-  if (keyCode == UP)
-  {
-    println ("moveUpPlayer2()");
+
+  if (keyCode == UP || keyCode == DOWN) {
+   println("Stop player 1 and stop player 2");
   
-  }else if (keyCode == DOWN ){
-    println ("moveDownPlayer2()");
     
-  }else if ( key == 'w'){
-    println (" moveUpPlayer1()");
+  }if (key == 'w' || key == 's') {
+    println("Stop p1 p2");
     
-  }else if ( key == 's'){
-    println ("moveDownPlayer1()");
   }
 }

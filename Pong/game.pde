@@ -16,8 +16,6 @@ class Game {
   }
 
   void tick () {
-    a = a+1;
-    println(a);
 
     player1.tick();
     player2.tick();
