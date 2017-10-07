@@ -5,50 +5,64 @@ enum Side {
 }
 
 class Game {
+  
   Player player1;
   Player player2;
   Ball ball;
   int a=0;
 
   void moveUpPlayer1() {
+    
     player1.moveUp();
+    
   }
   void moveDownPlayer1() {
+    
     player1.moveDown();
+    
   }
   void stopPlayer1() {
+    
     player1.stop();
+ 
   }
   
   void moveUpPlayer2() {
+    
     player2.moveUp();
+    
   }
   void moveDownPlayer2() {
+    
     player2.moveDown();
+    
   }
   void stopPlayer2() {
+    
     player2.stop();
+    
   }
 
   public Game() {
+    
     player1 = new Player(Side.LEFT);
     player2 = new Player(Side.RIGHT);
     ball = new Ball();
+    
   }
 
   void tick () {
 
     player1.tick();
     player2.tick();
+    
   }
 
   void draw () {
+    
     player1.draw();
     player2.draw();
-    ball.draw();
-  
-  
-  
+    ball.draw();  
 
   }
 }
