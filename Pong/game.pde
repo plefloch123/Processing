@@ -1,6 +1,6 @@
 enum Side {
   
-  LEFT, RIGHT
+  LEFT, RIGHT,
 
 }
 
@@ -26,5 +26,6 @@ class Game {
   void draw () {
     player1.draw();
     player2.draw();
+
   }
 }
