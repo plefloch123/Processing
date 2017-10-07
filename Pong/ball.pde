@@ -1,6 +1,6 @@
 class Ball {
 
- float xpos = random (200,400);
+ float xpos = 400;
  float ypos = random (125,250);
  float rad = 20;
   
