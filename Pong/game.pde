@@ -9,6 +9,19 @@ class Game {
   Player player2;
   int a=0;
 
+  void moveUpPlayer1() {
+  }
+  void moveDownPlayer1() {
+  }
+  void stopPlayer1() {
+  }
+  
+  void moveUpPlayer2() {
+  }
+  void moveDownPlayer2() {
+  }
+  void stopPlayer2() {
+  }
 
   public Game() {
     player1 = new Player(Side.LEFT);
