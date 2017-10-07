@@ -45,17 +45,19 @@ class Player {
     }
   }
   void tick () {
-
-    println("Player Tick, side=" + side);
     
     if (isMoving) {
       if (direction == MovementDirection.UP) {
            y -= 5;
-        } else {
-           y += 5;
+          if (y < 0){  
+          y = 0;
+          println("reach edge");
         }
-      }
+      } else {
+         y += 5;
+      } 
     }
+  }
 
   void draw () {
 
