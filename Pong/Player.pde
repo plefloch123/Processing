@@ -51,11 +51,17 @@ class Player {
            y -= 5;
           if (y < 0){  
           y = 0;
-          println("reach edge");
+          isMoving = false;
+          
         }
       } else {
          y += 5;
+         if (y >360){
+           y = 360;
+           isMoving = false;
+           
       } 
+    }
     }
   }
 
