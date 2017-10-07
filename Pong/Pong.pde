@@ -15,15 +15,33 @@ void draw () {
   game.draw();
 }
 
-void keyPressed()
+  void keyPressed()
 {
 
-  if (keyCode == UP || keyCode == DOWN) {
-   println("Stop player 1 and stop player 2");
+  if (keyCode == UP ) {
+    game.moveUpPlayer2();
+    
+  }else if( keyCode == DOWN) {
+    
+  game.moveDownPlayer2();
+    
+  }else if (key == 'w' ){
+  game.moveUpPlayer1();  
   
+  }else if (key == 's') {
+
+    game.moveDownPlayer1();
+  }
+
+}
+
+void keyReleased() {
+  if (keyCode == UP || keyCode == DOWN) {
     
-  }if (key == 'w' || key == 's') {
-    println("Stop p1 p2");
+    game.stopPlayer2();
+   
+  } else if (key == 'w' || key == 's') {
     
+    game.stopPlayer1();
   }
 }

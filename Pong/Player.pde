@@ -9,6 +9,13 @@ class Player {
   int x ;
   int y = height/2 - barLength/2;
 
+  public void moveUp() {
+  }
+  public void moveDown() {
+  }
+  public void stop() {
+  }
+
   public Player(Side side) {
 
     this.side = side;
@@ -33,23 +40,5 @@ class Player {
       rect (x, y, barWidth, barLength);
     }
   }
-  
-  void keyPressed(){
-      
-    if (keyCode == UP)
-    {
-      println ("moveUpPlayer2()");
-      if (side == side.LEFT )
-        x = x+1;
-    } else if (keyCode == DOWN ){
-    
-      println ("moveDownPlayer2()");
-      
-    }else if ( key == 'w'){
-      println (" moveUpPlayer1()");
-      
-    }else if ( key == 's'){
-      println ("moveDownPlayer1()");
-    }
-  }
+
 }
