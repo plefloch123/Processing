@@ -13,6 +13,7 @@ void draw () {
   background (100);
   game.tick();
   game.draw();
+  
 }
 
   void keyPressed()

@@ -7,6 +7,7 @@ enum Side {
 class Game {
   Player player1;
   Player player2;
+  Ball ball;
   int a=0;
 
   void moveUpPlayer1() {
@@ -32,6 +33,7 @@ class Game {
   public Game() {
     player1 = new Player(Side.LEFT);
     player2 = new Player(Side.RIGHT);
+    ball = new Ball();
   }
 
   void tick () {
@@ -43,6 +45,7 @@ class Game {
   void draw () {
     player1.draw();
     player2.draw();
+    ball.draw();
 
   }
 }
