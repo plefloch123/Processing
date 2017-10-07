@@ -1,3 +1,7 @@
+enum MovementDirection {
+UP, DOWN
+}
+
 
 class Player {
 
@@ -9,11 +13,25 @@ class Player {
   int x ;
   int y = height/2 - barLength/2;
 
+  boolean isMoving = false;
+  MovementDirection direction = MovementDirection.UP;
+  
   public void moveUp() {
+    
+    direction = MovementDirection.UP;
+    this.isMoving = true;
+    
   }
   public void moveDown() {
+    
+    direction = MovementDirection.DOWN;
+    this.isMoving = true;
+    
   }
   public void stop() {
+    
+    this.isMoving = false;
+    
   }
 
   public Player(Side side) {
@@ -29,7 +47,15 @@ class Player {
   void tick () {
 
     println("Player Tick, side=" + side);
-  }
+    
+    if (isMoving) {
+      if (direction == MovementDirection.UP) {
+           y -= 5;
+        } else {
+           y += 5;
+        }
+      }
+    }
 
   void draw () {
 
