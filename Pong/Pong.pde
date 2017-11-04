@@ -1,3 +1,11 @@
+// TODO
+// player left to bounce a ball
+// player right as above
+// let ball through when it doesnt hit the player
+// Create a new ball when the ball is off the screen and make it move
+// Count points for each player
+// Display scoreboard
+
 Game game;
 
 void setup () {
