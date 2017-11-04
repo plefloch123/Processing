@@ -46,6 +46,10 @@ void keyPressed(){
     game.moveDownPlayer1();
     
   }
+  
+  else if (key =='r'){
+    game.reset();
+  }
 }
 
 void keyReleased() {
@@ -57,5 +61,5 @@ void keyReleased() {
 
     game.stopPlayer1();
     
-  }
+  } 
 }

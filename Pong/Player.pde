@@ -65,7 +65,7 @@ class Player {
       } else {
         
          y += 5;
-         if (y >360){
+         if (y > 360){
            y = 360;
            isMoving = false;
       } 

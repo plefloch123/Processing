@@ -42,6 +42,11 @@ class Game {
     player2.stop();
     
   }
+  
+  void reset(){
+    
+    ball= new Ball();
+  }
 
   public Game() {
     
@@ -55,8 +60,8 @@ class Game {
 
     player1.tick();
     player2.tick();
-    
-  }
+    ball.tick();
+}
 
   void draw () {
     
