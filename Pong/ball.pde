@@ -12,20 +12,22 @@ class Ball {
 
 
   void draw() {
-
-
-    //Draws circle
+    
     ellipse( xpos, ypos, rad, rad);
+    
   }
 
   void tick() {
 
     xpos = xpos + ( xspeed * xdirection  );
     ypos = ypos + ( yspeed * ydirection  );
+    
     // Changes direction when hits the floor
     if (ypos > height-rad/2 || ypos < rad/2) {
 
       ydirection *= -1;
+      
     }
+    
   }
 }

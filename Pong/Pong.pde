@@ -1,8 +1,3 @@
-// TODO
-// Create a new ball when the ball is off the screen and make it move (Working on this) 
-// Count points for each player
-// Display scoreboard
-
 Game game;
 
 void setup () {
@@ -22,10 +17,10 @@ void draw () {
   
 }
 
-void keyPressed(){
+void keyPressed() {
 
   if (keyCode == UP ) {
-    
+
     game.moveUpPlayer2();
     
   } else if ( keyCode == DOWN) {
@@ -33,38 +28,38 @@ void keyPressed(){
     game.moveDownPlayer2();
     
   } else if (key == 'w' ) {
-    
+
     game.moveUpPlayer1();
     
   } else if (key == 's') {
-    
+
     game.moveDownPlayer1();
     
   }
   //Incase caps lock is on it still works
   else if (key == 'W' ) {
-    
+
     game.moveUpPlayer1();
     
   } else if (key == 'S') {
-    
+
     game.moveDownPlayer1();
     
-  }
-  
-  else if (key =='r'){
+  } else if (key =='r') {
+    
     game.reset();
+    
   }
 }
 
 void keyReleased() {
   if (keyCode == UP || keyCode == DOWN) {
-    
+
     game.stopPlayer2();
     
   } else if (key == 'w' || key == 's') {
 
     game.stopPlayer1();
     
-  } 
+  }
 }
