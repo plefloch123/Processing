@@ -54,13 +54,13 @@ class Game {
     player2.tick();
     ball.tick();
 
-    if (ball.xpos < player1.x && ball.ypos >= player1.y ) {
-      ball.xdirection *= -1;
+    if (ball.xpos < player1.x && ball.ypos >= player1.y && ball.ypos <= player1.y + player1.barLength ) {
+      ball.xdirection *= -1.1;
       println(" I T I S D O I N G I T ");
     }
 
-    if (ball.xpos > player2.x && ball.ypos >= player2.y ) {
-      ball.xdirection *= -1;
+    if (ball.xpos > player2.x && ball.ypos >= player2.y && ball.ypos <= player2.y + player2.barLength ) {
+      ball.xdirection *= -1.1;
       println(" I T I S D O I N G I T ");
     }
     
